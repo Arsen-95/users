@@ -17,3 +17,5 @@ export const userSchema = yup.object().shape({
     )
     .required('Город обязателен'),
 });
+
+export type UpdateUserValues = yup.InferType<typeof userSchema>;
